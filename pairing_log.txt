@@ -9,21 +9,21 @@ load:0x4086b910,len:0xed0
 load:0x4086e610,len:0x3198
 entry 0x4086b91a
 I (6) boot: ESP-IDF 5.5.2.260206 2nd stage bootloader
-I (7) boot: compile time Mar 24 2026 12:46:53
-I (8) boot: chip revision: v0.0
-I (9) boot: efuse block revision: v0.1
-I (11) boot.esp32c6: SPI Speed      : 80MHz
+I (6) boot: compile time Mar 24 2026 12:46:53
+I (7) boot: chip revision: v0.0
+I (8) boot: efuse block revision: v0.1
+I (10) boot.esp32c6: SPI Speed      : 80MHz
 I (14) boot.esp32c6: SPI Mode       : DIO
 I (18) boot.esp32c6: SPI Flash Size : 4MB
-I (22) boot: Enabling RNG early entropy source...
+I (21) boot: Enabling RNG early entropy source...
 I (26) boot: Partition Table:
-I (29) boot: ## Label            Usage          Type ST Offset   Length
+I (28) boot: ## Label            Usage          Type ST Offset   Length
 I (35) boot:  0 nvs              WiFi data        01 02 00009000 00010000
-I (42) boot:  1 phy_init         RF data          01 01 00019000 00001000
+I (41) boot:  1 phy_init         RF data          01 01 00019000 00001000
 I (48) boot:  2 factory          factory app      00 00 00020000 00300000
-I (55) boot: End of partition table
+I (54) boot: End of partition table
 I (58) esp_image: segment 0: paddr=00020020 vaddr=42150020 size=82aach (535212) map
-I (166) esp_image: segment 1: paddr=000a2ad4 vaddr=40800000 size=0d544h ( 54596) load
+I (165) esp_image: segment 1: paddr=000a2ad4 vaddr=40800000 size=0d544h ( 54596) load
 I (179) esp_image: segment 2: paddr=000b0020 vaddr=42000020 size=144c2ch (1330220) map
 I (429) esp_image: segment 3: paddr=001f4c54 vaddr=4080d544 size=11818h ( 71704) load
 I (445) esp_image: segment 4: paddr=00206474 vaddr=4081ed60 size=048d4h ( 18644) load
@@ -40,8 +40,8 @@ I (494) app_init: Compile time:     Mar 24 2026 19:40:22
 I (499) app_init: ELF file SHA256:  4ab96dde6...
 I (503) app_init: ESP-IDF:          5.5.2.260206
 I (508) efuse_init: Min chip rev:     v0.0
-I (511) efuse_init: Max chip rev:     v0.99
-I (515) efuse_init: Chip rev:         v0.0
+I (512) efuse_init: Max chip rev:     v0.99
+I (516) efuse_init: Chip rev:         v0.0
 I (519) heap_init: Initializing. RAM available for dynamic allocation:
 I (526) heap_init: At 4083D030 len 0003F5E0 (253 KiB): RAM
 I (531) heap_init: At 4087C610 len 00002F54 (11 KiB): RAM
@@ -50,11 +50,11 @@ I (542) spi_flash: detected chip: generic
 I (545) spi_flash: flash io: dio
 I (550) sleep_gpio: Configure to isolate all GPIO pins in sleep state
 I (554) sleep_gpio: Enable automatic switching of GPIO sleep configuration
-I (569) main_task: Started on CPU0
-I (571) main_task: Calling app_main()
-I (575) MAX_MATTER_MAIN: Starting MAX! to Matter Bridge...
-I (603) MAX_MATTER_MAIN: Loaded Base ID from NVS: 0x123456
-[5nI (1160) CLI: CLI initialized.
+I (570) main_task: Started on CPU0
+I (572) main_task: Calling app_main()
+I (576) MAX_MATTER_MAIN: Starting MAX! to Matter Bridge...
+I (602) MAX_MATTER_MAIN: Loaded Base ID from NVS: 0x123456
+[5nI (1159) CLI: CLI initialized.
 
 Type 'help' to get the list of commands.
 Use UP/DOWN arrows to navigate through command history.
@@ -65,19 +65,19 @@ Your terminal application does not support escape sequences.
 Line editing and history features are disabled.
 
 On Windows, try using Windows Terminal or Putty instead.
-max-bridge>  I (1162) MATTER_BRIDGE: Initializing Matter Bridge Node...
-I (1198) MATTER_BRIDGE: Bridge endpoint created successfully
-W (1201) data_model: Attribute 0x00000012 on cluster 0x00000039 already exists. Not creating again.
-I (1213) MATTER_BRIDGE: Virtual switch for Auto-Discovery created (Endpoint ID 2)
-I (1214) MAX_MATTER_MAIN: Loaded 0 devices from NVS
-I (1216) pp: pp rom version: 5b8dcfa
-I (1227) net80211: net80211 rom version: 5b8dcfa
-I (1229) wifi:wifi driver task: 4084a650, prio:23, stack:6656, core=0
-I (1232) wifi:wifi firmware version: 1ac82cd
-I (1233) wifi:wifi certification version: v7.0
+max-bridge>  I (1161) MATTER_BRIDGE: Initializing Matter Bridge Node...
+I (1197) MATTER_BRIDGE: Bridge endpoint created successfully
+W (1200) data_model: Attribute 0x00000012 on cluster 0x00000039 already exists. Not creating again.
+I (1212) MATTER_BRIDGE: Virtual switch for Auto-Discovery created (Endpoint ID 2)
+I (1213) MAX_MATTER_MAIN: Loaded 0 devices from NVS
+I (1215) pp: pp rom version: 5b8dcfa
+I (1226) net80211: net80211 rom version: 5b8dcfa
+I (1228) wifi:wifi driver task: 4084a6d4, prio:23, stack:6656, core=0
+I (1231) wifi:wifi firmware version: 1ac82cd
+I (1232) wifi:wifi certification version: v7.0
 I (1243) wifi:config NVS flash: enabled
 I (1244) wifi:config nano formatting: disabled
-I (1245) wifi:mac_version:HAL_MAC_ESP32AX_761,ut_version:N, band mode:0x1
+I (1244) wifi:mac_version:HAL_MAC_ESP32AX_761,ut_version:N, band mode:0x1
 I (1256) wifi:Init data frame dynamic rx buffer num: 32
 I (1257) wifi:Init static rx mgmt buffer num: 5
 I (1267) wifi:Init management short buffer num: 32
@@ -85,40 +85,40 @@ I (1268) wifi:Init dynamic tx buffer num: 32
 I (1269) wifi:Init static tx FG buffer num: 2
 I (1279) wifi:Init static rx buffer size: 1700 (rxctrl:92, csi:512)
 I (1281) wifi:Init static rx buffer num: 10
-I (1291) wifi:Init dynamic rx buffer num: 32
+I (1281) wifi:Init dynamic rx buffer num: 32
 I (1292) wifi_init: rx ba win: 6
 I (1293) wifi_init: accept mbox: 6
 I (1294) wifi_init: tcpip mbox: 32
-I (1304) wifi_init: udp mbox: 6
-I (1305) wifi_init: tcp mbox: 6
+I (1294) wifi_init: udp mbox: 6
+I (1304) wifi_init: tcp mbox: 6
 I (1305) wifi_init: tcp tx win: 5760
 I (1306) wifi_init: tcp rx win: 5760
 I (1316) wifi_init: tcp mss: 1440
 I (1317) wifi_init: WiFi IRAM OP enabled
 I (1317) wifi_init: WiFi RX IRAM OP enabled
-I (1328) wifi_init: WiFi SLP IRAM OP enabled
-I (1339) chip[DL]: NVS set: chip-counters/reboot-count = 4 (0x4)
+I (1318) wifi_init: WiFi SLP IRAM OP enabled
+I (1339) chip[DL]: NVS set: chip-counters/reboot-count = 5 (0x5)
 I (1342) chip[DL]: Real time clock set to 946684800 (2000-01-01 00:00:00 UTC)
 I (1343) chip[DL]: Starting ESP WiFi layer
 I (1354) phy_init: phy_version 343,b513b46,Nov 14 2025,16:34:12
-W (1397) wifi:ACK_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)
-W (1399) wifi:CTS_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)
-W (1410) wifi:(agc)0x600a7128:0xd21049e6, min.avgNF:0xce->0xd2(dB), RCalCount:0x104, min.RRssi:0x9e6(-97.62)
+W (1396) wifi:ACK_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)
+W (1398) wifi:CTS_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)
+W (1410) wifi:(agc)0x600a7128:0xd21ce9ee, min.avgNF:0xce->0xd2(dB), RCalCount:0x1ce, min.RRssi:0x9ee(-97.12)
 I (1422) wifi:11ax coex: WDEVAX_PTI0(0x55777555), WDEVAX_PTI1(0x00003377).
 
 I (1424) wifi:mode : sta (54:32:04:03:59:68)
 I (1425) wifi:enable tsf
-I (1399) chip[DL]: Posting ESPSystemEvent: Wifi Event with eventId : 43
+I (1398) chip[DL]: Posting ESPSystemEvent: Wifi Event with eventId : 43
+W (1426) wifi:Haven't to connect to a suitable AP now!
 I (1438) chip[DL]: Posting ESPSystemEvent: Wifi Event with eventId : 2
-W (1439) wifi:Haven't to connect to a suitable AP now!
-I (1450) chip[DL]: Done driving station state, nothing else to do...
+I (1439) chip[DL]: Done driving station state, nothing else to do...
 W (1451) wifi:Haven't to connect to a suitable AP now!
 I (1462) chip[DL]: Done driving station state, nothing else to do...
-I (1464) chip[SVR]: Initializing subscription resumption storage...
+I (1463) chip[SVR]: Initializing subscription resumption storage...
 I (1476) chip[SVR]: Server initializing...
 I (1477) chip[TS]: Last Known Good Time: 2026-03-24T18:40:21
-I (1478) chip[DMG]: AccessControl: initializing
-I (1488) chip[DMG]: Examples::AccessControlDelegate::Init
+I (1477) chip[DMG]: AccessControl: initializing
+I (1478) chip[DMG]: Examples::AccessControlDelegate::Init
 I (1489) chip[DMG]: AccessControl: setting
 I (1490) chip[DMG]: DefaultAclStorage: initializing
 I (1500) chip[DMG]: DefaultAclStorage: 0 entries loaded
@@ -130,14 +130,14 @@ I (1532) chip[ZCL]: WRITE ERR: ep 0 clus 0x0000_0030 attr 0x0000_0000 not suppor
 I (1534) chip[DIS]: Updating services using commissioning mode 1
 I (1546) chip[DIS]: CHIP minimal mDNS started advertising.
 I (1547) chip[DIS]: Advertise commission parameter vendorID=65521 productID=32768 discriminator=2152/08 cm=1 cp=0
-I (1559) chip[DIS]: CHIP minimal mDNS configured as 'Commissionable node device'; instance name: C8AC89E6D9BA0BBF.
+I (1559) chip[DIS]: CHIP minimal mDNS configured as 'Commissionable node device'; instance name: 78854112B895CD7D.
 I (1571) chip[DIS]: mDNS service published: _matterc._udp
-I (1572) chip[IN]: CASE Server enabling CASE session setups
+I (1571) chip[IN]: CASE Server enabling CASE session setups
 I (1573) chip[SVR]: Joining Multicast groups
-I (1584) chip[SVR]: Server Listening...
-I (1586) esp_matter_attribute: ********** R : Endpoint 0x0000's Cluster 0x0000003C's Attribute 0x0000FFFC is 0 **********
+I (1583) chip[SVR]: Server Listening...
+I (1585) esp_matter_attribute: ********** R : Endpoint 0x0000's Cluster 0x0000003C's Attribute 0x0000FFFC is 0 **********
 I (1598) data_model: Dynamic endpoint 0 added
-E (1599) data_model: Cluster cannot be NULL.
+E (1598) data_model: Cluster cannot be NULL.
 I (1599) data_model: Dynamic endpoint 1 added
 E (1610) data_model: Cluster cannot be NULL.
 I (1611) esp_matter_attribute: ********** R : Endpoint 0x0002's Cluster 0x00000003's Attribute 0x00000001 is 2 **********
@@ -154,8 +154,8 @@ E (1696) data_model: Cluster cannot be NULL.
 I (1708) MATTER_BRIDGE: Matter stack started successfully. Waiting for BLE Commissioning...
 I (1710) MAX_MATTER_MAIN: RF Task started
 I (1709) chip[DL]: WIFI_EVENT_STA_START
-W (1724) wifi:Haven't to connect to a suitable AP now!
-I (1723) CC1101_DRV: CC1101 initialized via SPI with MAX! (Moritz) parameters
-I (1726) chip[DL]: Done driving station state, nothing else to do...
+W (1723) wifi:Haven't to connect to a suitable AP now!
+I (1722) CC1101_DRV: CC1101 initialized via SPI with MAX! (Moritz) parameters
+I (1725) chip[DL]: Done driving station state, nothing else to do...
 I (1712) MAX_MATTER_MAIN: Matter Bridge Task started
 I (1712) main_task: Returned from app_main()
