@@ -1,17 +1,20 @@
-import serial, time, sys
+import serial
+import sys
+import time
+
 try:
-    ser = serial.Serial('/dev/ttyACM2', 115200, timeout=1)
+    s = serial.Serial('/dev/serial/by-id/usb-Espressif_USB_JTAG_serial_debug_unit_98:A3:16:8E:9E:5C-if00', 115200, timeout=1)
+    s.dtr = False
+    s.rts = True
+    time.sleep(0.1)
+    s.dtr = True
+    s.rts = False
+    
+    end_time = time.time() + 10
+    while time.time() < end_time:
+        line = s.readline()
+        if line:
+            sys.stdout.buffer.write(line)
+            sys.stdout.flush()
 except Exception as e:
     print(e)
-    sys.exit(1)
-ser.setDTR(False)
-ser.setRTS(False)
-time.sleep(0.1)
-ser.setDTR(True)
-ser.setRTS(True)
-start = time.time()
-while time.time() - start < 8:
-    line = ser.readline()
-    if line:
-        msg = line.decode('utf-8', 'replace').strip()
-        print(msg)
