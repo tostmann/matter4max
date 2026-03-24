@@ -1,7 +1,0 @@
-key,type,encoding,value
-chip-factory,namespace,,
-pin-code,data,u32,29644537
-iteration-count,data,u32,1000
-salt,data,base64,/nd5Fi/XSNmg7pUu1tn9EQ==
-verifier,data,base64,cir74WH+smG8d3agLS+riQHdYwlaV2RfPFQ25+QG8O4E2kVtiu1tp6AEcfyX4a/+WQs20aS9usYL8sCws297Gy54fBhkTFprIc1rLcWS3Uvo/ME+oXG6hS5h4rlzWkWIQA==
-discriminator,data,u32,3840
