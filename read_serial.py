@@ -9,12 +9,9 @@ ser.setRTS(False)
 time.sleep(0.1)
 ser.setDTR(True)
 ser.setRTS(True)
-with open('pairing_log.txt', 'w') as f:
-    start = time.time()
-    while time.time() - start < 15:
-        line = ser.readline()
-        if line:
-            msg = line.decode('utf-8', 'replace').strip()
-            print(msg)
-            f.write(msg + '\n')
-            f.flush()
+start = time.time()
+while time.time() - start < 15:
+    line = ser.readline()
+    if line:
+        msg = line.decode('utf-8', 'replace').strip()
+        print(msg)
