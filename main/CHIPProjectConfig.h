@@ -1,10 +1,8 @@
 #pragma once
 
-// Overrides for CHIP Device Config
-#define CHIP_DEVICE_CONFIG_DEVICE_VENDOR_NAME "busware.de"
-#define CHIP_DEVICE_CONFIG_DEVICE_VENDOR_ID 0xFFF1
-#define CHIP_DEVICE_CONFIG_DEVICE_PRODUCT_NAME "MAX! Bridge"
+// Use the default test setup PIN of esp-matter: 20202021
+// Change the discriminator slightly to force Home Assistant to ignore its BLE cache!
+#define CHIP_DEVICE_CONFIG_USE_TEST_SETUP_DISCRIMINATOR 3841
 
-// We are using the default test setup code of esp-matter
-// Setup PIN: 20202021
-// Discriminator: 3840
+// Minimal or no overrides to avoid Certification Declaration (CD) mismatches:
+#define CHIP_DEVICE_CONFIG_DEVICE_PRODUCT_NAME "MAX-Bridge"
