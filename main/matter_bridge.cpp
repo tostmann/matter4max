@@ -1,6 +1,7 @@
 #include "matter_bridge.h"
 #include <esp_log.h>
 #include <esp_err.h>
+#include <esp_mac.h>
 #include <esp_matter.h>
 #include <esp_matter_core.h>
 #include <esp_matter_console.h>
@@ -130,7 +131,13 @@ extern "C" void matter_bridge_init(void)
 
     // Create the Root Node
     node::config_t node_config;
-    strncpy(node_config.root_node.basic_information.node_label, "MAX! Bridge", sizeof(node_config.root_node.basic_information.node_label) - 1);
+    
+    uint8_t mac[6];
+    esp_read_mac(mac, ESP_MAC_WIFI_STA);
+    char node_label[32];
+    snprintf(node_label, sizeof(node_label), "MAX! Bridge %02X%02X", mac[4], mac[5]);
+    
+    strncpy(node_config.root_node.basic_information.node_label, node_label, sizeof(node_config.root_node.basic_information.node_label) - 1);
     
     node_t *node = node::create(&node_config, app_attribute_update_cb, app_identification_cb);
     if (!node) {
