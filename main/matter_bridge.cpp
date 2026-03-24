@@ -7,7 +7,6 @@
 #include <esp_matter_cluster.h>
 #include <esp_matter_attribute.h>
 #include "esp_wifi.h"
-#include "wifi-conf.h"
 #include "max_nvs.h"
 
 using namespace esp_matter;
@@ -120,17 +119,8 @@ static esp_err_t app_identification_cb(identification::callback_type_t type, uin
     return ESP_OK;
 }
 
-static void wifi_init_and_connect()
-{
-    wifi_config_t wifi_config = {};
-    snprintf((char *)wifi_config.sta.ssid, sizeof(wifi_config.sta.ssid), "%s", WIFI_SSID);
-    snprintf((char *)wifi_config.sta.password, sizeof(wifi_config.sta.password), "%s", WIFI_PASS);
-    
-    ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_STA));
-    ESP_ERROR_CHECK(esp_wifi_set_config(WIFI_IF_STA, &wifi_config));
-    ESP_ERROR_CHECK(esp_wifi_connect());
-    ESP_LOGI(TAG, "Connecting to Wi-Fi SSID: %s", WIFI_SSID);
-}
+// Wi-Fi is managed dynamically by the Matter BLE Commissioning process.
+// We no longer hardcode credentials here.
 
 static endpoint_t *g_aggregator_endpoint = NULL;
 
@@ -193,9 +183,7 @@ extern "C" void matter_bridge_start(void) {
     if (err != ESP_OK) {
         ESP_LOGE(TAG, "Failed to start Matter stack: %d", err);
     } else {
-        ESP_LOGI(TAG, "Matter stack started successfully.");
-        // Connect to Wi-Fi manually for testing without BLE commissioning
-        wifi_init_and_connect();
+        ESP_LOGI(TAG, "Matter stack started successfully. Waiting for BLE Commissioning...");
     }
 }
 

@@ -7,7 +7,9 @@ This guide explains how to integrate your MAX! devices into Home Assistant via t
 2. Open the Home Assistant Mobile App.
 3. Go to **Settings > Devices & Services**.
 4. Click **Add Integration > Add Matter Device**.
-5. Scan the QR code provided by the provisioning script or enter the setup code manually.
+5. Choose **"Setup without QR Code"** and enter the static Setup PIN manually:
+   - **Setup PIN:** `86801101`
+   - During setup, the device creates a BLE Hotspot. Home Assistant will discover the Bridge and automatically send your Wi-Fi credentials to it! No more hardcoded Wi-Fi passwords in the C-Code!
 6. Once paired, the bridge will automatically expose all paired MAX! devices as individual entities in Home Assistant.
 
 ## Thermostat Modes (Heat vs. Auto)

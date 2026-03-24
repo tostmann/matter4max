@@ -7,7 +7,6 @@
 #include "nvs_flash.h"
 #include "nvs.h"
 #include "radio_hal.h"
-#include "wifi-conf.h"
 #include "matter_bridge.h"
 #include "max_nvs.h"
 

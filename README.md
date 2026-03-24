@@ -27,7 +27,10 @@ This project is based on the ESP-IDF framework and the `esp-matter` SDK.
    idf.py build
    idf.py -p /dev/ttyUSB0 flash monitor
    ```
-3. **Commissioning:** Watch the serial monitor output or run the provision script to find your unique Setup PIN and QR Code URL for Matter commissioning.
+3. **Commissioning:** The firmware includes a fixed, static setup code to make deployment as simple as possible. No manual provisioning scripts are needed!
+   - **Setup PIN:** `86801101`
+   - **Discriminator:** `2152`
+   - During setup, the device creates a BLE Hotspot. Use your Smart Home App (like Apple Home or Google Home) to pass your Wi-Fi credentials to the Bridge over the air.
 
 ## Duty Cycle Explanation
 The 868MHz frequency band is subject to the ETSI EN 300 220 regulation, which limits transmission time to 1% (36 seconds per hour). 
