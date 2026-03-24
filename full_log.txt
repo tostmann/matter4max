@@ -1,0 +1,210 @@
+Verbinde mit /dev/serial/by-id/usb-Espressif_USB_JTAG_serial_debug_unit_98:A3:16:8E:9E:5C-if00 ...
+Triggere Hardware-Reset via RTS/DTR...
+Warte auf Matter Pairing Codes (Timeout in 15 Sekunden)...
+
+LOG: I (1170) CLI: CLI initialized.
+LOG: Type 'help' to get the list of commands.
+LOG: Use UP/DOWN arrows to navigate through command history.
+LOG: Press TAB when typing command name to auto-complete.
+LOG: Your terminal application does not support escape sequences.
+LOG: Line editing and history features are disabled.
+LOG: On Windows, try using Windows Terminal or Putty instead.
+LOG: max-bridge>  I (1171) MATTER_BRIDGE: Initializing Matter Bridge Node...
+LOG: I (1208) MATTER_BRIDGE: Bridge endpoint created successfully
+LOG: I (1211) MATTER_BRIDGE: Virtual switch for Auto-Discovery created (Endpoint ID 2)
+LOG: cI (1222) pp: pp rom version: 5b8dcfa
+LOG: I (1223) net80211: net80211 rom version: 5b8dcfa
+LOG: I (1225) wifi:wifi driver task: 40843704, prio:23, stack:6656, core=0
+LOG: I (1233) wifi:wifi firmware version: 1ac82cd
+LOG: I (1234) wifi:wifi certification version: v7.0
+LOG: I (1234) wifi:config NVS flash: enabled
+LOG: I (1245) wifi:config nano formatting: disabled
+LOG: I (1245) wifi:mac_version:HAL_MAC_ESP32AX_761,ut_version:N, band mode:0x1
+LOG: I (1257) wifi:Init data frame dynamic rx buffer num: 32
+LOG: I (1258) wifi:Init static rx mgmt buffer num: 5
+LOG: I (1259) wifi:Init management short buffer num: 32
+LOG: I (1269) wifi:Init dynamic tx buffer num: 32
+LOG: I (1270) wifi:Init static tx FG buffer num: 2
+LOG: I (1271) wifi:Init static rx buffer size: 1700 (rxctrl:92, csi:512)
+LOG: I (1282) wifi:Init static rx buffer num: 10
+LOG: I (1283) wifi:Init dynamic rx buffer num: 32
+LOG: tI (1298) wifi_init: rx ba win: 6
+LOG: I (1299) wifi_init: accept mbox: 6
+LOG: I (1299) wifi_init: tcpip mbox: 32
+LOG: I (1299) wifi_init: udp mbox: 6
+LOG: I (1300) wifi_init: tcp mbox: 6
+LOG: I (1311) wifi_init: tcp tx win: 5760
+LOG: I (1311) wifi_init: tcp rx win: 5760
+LOG: I (1311) wifi_init: tcp mss: 1440
+LOG: I (1312) wifi_init: WiFi IRAM OP enabled
+LOG: JI (1327) wifi_init: WiFi RX IRAM OP enabled
+LOG: I (1328) wifi_init: WiFi SLP IRAM OP enabled
+LOG: I (1342) chip[DL]: NVS set: chip-counters/reboot-count = 5 (0x5)
+LOG: I (1344) chip[DL]: Real time clock set to 946684800 (2000-01-01 00:00:00 UTC)
+LOG: I (1345) chip[DL]: Starting ESP WiFi layer
+LOG: I (1357) phy_init: phy_version 343,b513b46,Nov 14 2025,16:34:12
+LOG: W (1439) wifi:ACK_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)
+LOG: W (1440) wifi:CTS_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)
+LOG: W (1452) wifi:(agc)0x600a7128:0xd21829f2, min.avgNF:0xce->0xd2(dB), RCalCount:0x182, min.RRssi:0x9f2(-96.88)
+LOG: I (1465) wifi:11ax coex: WDEVAX_PTI0(0x55777555), WDEVAX_PTI1(0x00003377).
+LOG: I (1467) wifi:mode : sta (98:a3:16:8e:9e:5c)
+LOG: I (1467) wifi:enable tsf
+LOG: I (1441) chip[DL]: Posting ESPSystemEvent: Wifi Event with eventId : 43
+LOG: W (1469) wifi:Haven't to connect to a suitable AP now!
+LOG: I (1481) chip[DL]: Posting ESPSystemEvent: Wifi Event with eventId : 2
+LOG: 0I (1481) chip[DL]: Attempting to connect WiFi station interface
+LOG: I (1499) chip[DL]: WiFi station state change: NotConnected -> Connecting
+LOG: I (1505) chip[DL]: Done driving station state, nothing else to do...
+LOG: I (1504) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0
+LOG: I (1517) wifi:(connect)dot11_authmode:0x3, pairwise_cipher:0x3, group_cipher:0x1
+LOG: I (1528) wifi:state: init -> auth (0xb0)
+LOG: mI (1507) chip[SVR]: Initializing subscription resumption storage...
+LOG: I (1540) chip[SVR]: Server initializing...
+LOG: I (1541) chip[TS]: Last Known Good Time: 2026-03-24T00:02:24
+LOG: I (1552) chip[DMG]: AccessControl: initializing
+LOG: I (1553) chip[DMG]: Examples::AccessControlDelegate::Init
+LOG: I (1553) chip[DMG]: AccessControl: setting
+LOG: I (1564) chip[DMG]: DefaultAclStorage: initializing
+LOG: I (1565) chip[DMG]: DefaultAclStorage: 0 entries loaded
+LOG: I (1565) chip[SVR]: WARNING: mTestEventTriggerDelegate is null
+LOG: I (1544) wifi:state: auth -> assoc (0x0)
+LOG: I (1585) chip[ZCL]: Using ZAP configuration...
+LOG: I (1586) esp_matter_cluster: Cluster plugin init common callback
+LOG: I (1587) chip[DMG]: AccessControlCluster: initializing
+LOG: I (1598) chip[ZCL]: WRITE ERR: ep 0 clus 0x0000_0030 attr 0x0000_0000 not supported
+LOG: I (1589) wifi:(assoc)RESP, Extended Capabilities length:8, operating_mode_notification:0
+LOG: I (1612) wifi:(assoc)RESP, Extended Capabilities, MBSSID:0, TWT Responder:0, OBSS Narrow Bandwidth RU In OFDMA Tolerance:0
+LOG: I (1624) wifi:Extended Capabilities length:8, operating_mode_notification:1
+LOG: I (1602) chip[DIS]: Updating services using commissioning mode 1
+LOG: I (1637) chip[DIS]: I (1626) wifi:BSS max idle period:10(1000TU), protected keep alive:FALSE
+LOG: I (1639) wifi:state: assoc -> run (0x10)
+LOG: I (1640) wifi:(trc)phytype:CBW20-SGI, snr:20, maxRate:144, highestRateIdx:0
+LOG: W (1651) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14
+LOG: I (1662) wifi:(trc)band:2G, rate(L-MCS3, rateIdx:5), ampdu(rate:L-MCS3, schedIdx(5, stop:8)), snr:20, ampduState:wait operational
+LOG: I (1674) wifi:ifidx:0, rssi:-78, nf:-98, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:144, he:0, vht:0, ht:1
+LOG: I (1686) wifi:(ht)max.RxAMPDULenExponent:3(65535 bytes), MMSS:6(8 us)
+LOG: CHIP minimal mDNS started advertising.
+LOG: I (1690) chip[DIS]: Advertise commission parameter vendorID=65521 productID=32768 discriminator=3840/15 cm=1 cp=0
+LOG: I (1702) chip[DIS]: CHIP minimal mDNS configured as 'Commissionable node device'; instance name: 6C580C434E6E996C.
+LOG: I (1713) chip[DIS]: mDNS service published: _matterc._udp
+LOG: I (1714) chip[IN]: CASE Server enabling CASE session setups
+LOG: I (1709) wifi:connected with Loessnitzgrund, aid = 5, channel 1, BW20, bssid = 74:da:38:63:20:3c
+LOG: I (1727) wifi:security: WPA2-PSK, phy:bgn, rssi:-78, cipher(pairwise:0x3, group:0x1), pmf:0,
+LOG: I (1727) chip[SVR]: Joining Multicast groups
+LOG: I (1739) chip[SVR]: Server Listening...
+LOG: I (1741) wifi:pm start, type: 1, twt_start:0
+LOG: I (1752) wifi:pm start, type:1, aid:0x5, trans-BSSID:74:da:38:63:20:3c, BSSID[5]:0x3c, mbssid(max-indicator:0, index:0), he:0
+LOG: I (1764) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+LOG: I (1765) wifi:set rx beacon pti, rx_bcn_pti: 10, bcn_timeout: 25000, mt_pti: 10, mt_time: 10000
+LOG: I (1777) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:1, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)
+LOG: I (1789) wifi:[ADDBA]TX addba request, tid:7, dialogtoken:2, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x20)
+LOG: I (1801) wifi:[ADDBA]TX addba request, tid:5, dialogtoken:3, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)
+LOG: I (1743) esp_matter_attribute: ********** R : Endpoint 0x0000's Cluster 0x0000003C's Attribute 0x0000FFFC is 0 **********
+LOG: I (1814) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+LOG: I (1827) data_model: Dynamic endpoint 0 added
+LOG: E (1827) data_model: Cluster cannot be NULL.
+LOG: I (1829) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:64, batimeout:0, txa_wnd:64
+LOG: I (1841) data_model: Dynamic endpoint 1 added
+LOG: E (1852) data_model: Cluster cannot be NULL.
+LOG: I (1843) wifi:[ADDBA]RX addba response, status:0, tid:7/tb:1(0xa1), bufsize:64, batimeout:0, txa_wnd:64
+LOG: I (1864) wifi:[ADDBA]RX addba response, status:0, tid:5/tb:1(0xa1), bufsize:64, batimeout:0, txa_wnd:64
+LOG: W (1866) wifi:<ba-add>idx:0, ifx:0, tid:0, TAHI:0x1003c20, TALO:0x6338da74, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005
+LOG: I (1854) esp_matter_attribute: ********** R : Endpoint 0x0002's Cluster 0x00000003's Attribute 0x00000001 is 2 **********
+LOG: I (1890) esp_matter_attribute: ********** R : Endpoint 0x0002's Cluster 0x00000004's Attribute 0x00000000 is 128 **********
+LOG: I (1902) esp_matter_attribute: ********** R : Endpoint 0x0002's Cluster 0x00000004's Attribute 0x0000FFFC is 1 **********
+LOG: I (1914) esp_matter_attribute: ********** R : Endpoint 0x0002's Cluster 0x00000006's Attribute 0x0000FFFC is 1 **********
+LOG: I (1926) esp_matter_attribute: ********** R : Endpoint 0x0002's Cluster 0x00000006's Attribute 0x00004003 is 0 **********
+LOG: I (1938) esp_matter_attribute: ********** R : Endpoint 0x0002's Cluster 0x00000006's Attribute 0x00000000 is 0 **********
+LOG: I (1950) chip[ZCL]: Boot reason: 0
+LOG: I (1951) esp_matter_attribute: ********** R : Endpoint 0x0002's Cluster 0x00000006's Attribute 0x00000000 is 0 **********
+LOG: I (1962) chip[ZCL]: Endpoint 2 On/off already set to new value
+LOG: I (1963) data_model: Dynamic endpoint 2 added
+LOG: E (1964) data_model: Cluster cannot be NULL.
+LOG: I (1815) chip[DL]: Posting ESPSystemEvent: Wifi Event with eventId : 4
+LOG: 1uo52Dd fI (2002) chip[DL]: WIFI_EVENT_STA_START
+LOG: I (2003) MATTER_BRIDGE: Matter stack started successfully.
+LOG: I (2004) chip[DL]: Done driving station state, nothing else to do...
+LOG: W (2005) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2
+LOG: iI (2026) chip[DL]: WIFI_EVENT_STA_CONNECTED
+LOG: I (2027) chip[DL]: WiFi station state change: Connecting -> Connecting_Succeeded
+LOG: W (2027) wifi:sta is connected, disconnect before connecting to new ap
+LOG: I (2041) chip[DL]: WiFi station state change: Connecting_Succeeded -> Connected
+LOG: I (2043) chip[DL]: WiFi station interface connected
+LOG: I (2054) chip[ZCL]: WiFiDiagnosticsDelegate: OnConnectionStatusChanged
+LOG: I (2056) chip[DL]: Done driving station state, nothing else to do...
+LOG: nI (2043) MATTER_BRIDGE: Connecting to Wi-Fi SSID: Loessnitzgrund
+LOG: I (2072) MAX_MATTER_MAIN: Loaded 3 devices from NVS
+LOG: SI (2084) esp_matter_attribute: ********** R : Endpoint 0x0003's Cluster 0x00000003's Attribute 0x00000001 is 2 **********
+LOG: I (2086) esp_matter_attribute: ********** R : Endpoint 0x0003's Cluster 0x00000004's Attribute 0x00000000 is 128 **********
+LOG: I (2098) esp_matter_attribute: ********** R : Endpoint 0x0003's Cluster 0x00000004's Attribute 0x0000FFFC is 1 **********
+LOG: I (2110) data_model: Dynamic endpoint 3 added
+LOG: E (2111) data_model: Cluster cannot be NULL.
+LOG: 0I (2125) MATTER_BRIDGE: Added Matter Thermostat for MAX! 0x01cfef (Endpoint 3)
+LOG: I (2127) MAX_MATTER_MAIN: Successfully added device 0x01CFEF to Matter (EP 3)
+LOG: I (2144) esp_matter_attribute: ********** R : Endpoint 0x0004's Cluster 0x00000003's Attribute 0x00000001 is 2 **********
+LOG: I (2145) esp_matter_attribute: ********** R : Endpoint 0x0004's Cluster 0x00000004's Attribute 0x00000000 is 128 **********
+LOG: I (2157) esp_matter_attribute: ********** R : Endpoint 0x0004's Cluster 0x00000004's Attribute 0x0000FFFC is 1 **********
+LOG: sI (2178) data_model: Dynamic endpoint 4 added
+LOG: E (2179) data_model: Cluster cannot be NULL.
+LOG: I (2179) MATTER_BRIDGE: Added Matter Thermostat for MAX! 0x01cfe8 (Endpoint 4)
+LOG: I (2191) MAX_MATTER_MAIN: Successfully added device 0x01CFE8 to Matter (EP 4)
+LOG: I (2203) esp_matter_attribute: ********** R : Endpoint 0x0005's Cluster 0x00000003's Attribute 0x00000001 is 2 **********
+LOG: I (2204) esp_matter_attribute: ********** R : Endpoint 0x0005's Cluster 0x00000004's Attribute 0x00000000 is 128 **********
+LOG: I (2216) esp_matter_attribute: ********** R : Endpoint 0x0005's Cluster 0x00000004's Attribute 0x0000FFFC is 1 **********
+LOG: *I (2236) data_model: Dynamic endpoint 5 added
+LOG: E (2237) data_model: Cluster cannot be NULL.
+LOG: I (2237) MATTER_BRIDGE: Added Matter Thermostat for MAX! 0x01c989 (Endpoint 5)
+LOG: I (2249) MAX_MATTER_MAIN: Successfully added device 0x01C989 to Matter (EP 5)
+LOG: I (2250) MAX_MATTER_MAIN: RF Task started
+LOG: I (2253) MAX_MATTER_MAIN: Matter Bridge Task started
+LOG: I (2264) CC1101_DRV: CC1101 initialized via SPI with MAX! (Moritz) parameters
+LOG: I (2253) main_task: Returned from app_main()
+LOG: I (2895) esp_netif_handlers: sta ip: 10.10.11.28, mask: 255.255.255.0, gw: 10.10.11.1
+LOG: I (2896) chip[DL]: Posting ESPSystemEvent: IP Event with eventId : 0
+LOG: I (2907) chip[DL]: IP_EVENT_STA_GOT_IP
+LOG: I (2908) chip[DL]: IPv4 address changed on WiFi station interface: 10.10.11.28/255.255.255.0 gateway 10.10.11.1
+LOG: I (2919) chip[DL]: IPv4 Internet connectivity ESTABLISHED
+LOG: I (2920) MATTER_BRIDGE: Interface IP Address Changed
+LOG: I (2931) chip[DIS]: Updating services using commissioning mode 1
+LOG: I (2933) chip[DIS]: CHIP minimal mDNS started advertising.
+LOG: I (2939) chip[DIS]: Advertise commission parameter vendorID=65521 productID=32768 discriminator=3840/15 cm=1 cp=0
+LOG: I (2952) chip[DIS]: CHIP minimal mDNS configured as 'Commissionable node device'; instance name: 6C580C434E6E996C.
+LOG: I (2955) chip[DIS]: mDNS service published: _matterc._udp
+LOG: I (3214) chip[DL]: Posting ESPSystemEvent: IP Event with eventId : 3
+LOG: I (3215) chip[DL]: IP_EVENT_GOT_IP6
+LOG: I (3216) chip[DL]: IPv6 addr available. Ready on WIFI_STA_DEF interface: fe80:0000:0000:0000:9aa3:16ff:fe8e:9e5c
+LOG: I (3228) MATTER_BRIDGE: Interface IP Address Changed
+LOG: I (3228) chip[DIS]: Updating services using commissioning mode 1
+LOG: I (3241) chip[DIS]: CHIP minimal mDNS started advertising.
+LOG: I (3250) chip[DIS]: Advertise commission parameter vendorID=65521 productID=32768 discriminator=3840/15 cm=1 cp=0
+LOG: I (3252) chip[DIS]: CHIP minimal mDNS configured as 'Commissionable node device'; instance name: 6C580C434E6E996C.
+LOG: I (3267) chip[DIS]: mDNS service published: _matterc._udp
+LOG: I (3269) chip[SVR]: Server initialization complete
+LOG: I (3269) chip[DIS]: Updating services using commissioning mode 1
+LOG: I (3281) chip[DIS]: CHIP minimal mDNS started advertising.
+LOG: I (3290) chip[DIS]: Advertise commission parameter vendorID=65521 productID=32768 discriminator=3840/15 cm=1 cp=0
+LOG: I (3293) chip[DIS]: CHIP minimal mDNS configured as 'Commissionable node device'; instance name: 6C580C434E6E996C.
+LOG: I (3308) chip[DIS]: mDNS service published: _matterc._udp
+LOG: I (3312) chip[IM]: No subscriptions to resume
+LOG: I (4681) MAX_MATTER_MAIN: MAX! RX [CRC OK] -> Cmd: 0x42, Src: 01CFEF, Dst: 000000 | Hex: 0C3A044201CFEF0000000018CADED7
+LOG: I (4684) esp_matter_attribute: ********** R : Endpoint 0x0003's Cluster 0x00000201's Attribute 0x0000001C is 1 **********
+LOG: I (4696) esp_matter_attribute: ********** R : Endpoint 0x0003's Cluster 0x00000201's Attribute 0x00000000 is null **********
+LOG: I (4708) esp_matter_attribute: ********** W : Endpoint 0x0003's Cluster 0x00000201's Attribute 0x00000000 is 2020 **********
+LOG: I (4720) MATTER_BRIDGE: app_attribute_update_cb: ep=3, cl=0x201, attr=0x0, cb_type=0, val_type=137
+LOG: I (4732) esp_matter_attribute: ********** R : Endpoint 0x0003's Cluster 0x00000201's Attribute 0x0000FFFC is 35 **********
+LOG: I (4734) esp_matter_attribute: ********** R : Endpoint 0x0003's Cluster 0x00000201's Attribute 0x00000019 is 2 **********
+LOG: I (4746) esp_matter_attribute: ********** R : Endpoint 0x0003's Cluster 0x00000201's Attribute 0x00000003 is 450 **********
+LOG: I (4758) esp_matter_attribute: ********** R : Endpoint 0x0003's Cluster 0x00000201's Attribute 0x00000004 is 3050 **********
+LOG: I (4770) esp_matter_attribute: ********** R : Endpoint 0x0003's Cluster 0x00000201's Attribute 0x00000015 is 450 **********
+LOG: I (4782) esp_matter_attribute: ********** R : Endpoint 0x0003's Cluster 0x00000201's Attribute 0x00000016 is 3050 **********
+LOG: I (4794) esp_matter_attribute: ********** R : Endpoint 0x0003's Cluster 0x00000201's Attribute 0x00000011 is 2600 **********
+LOG: I (4806) esp_matter_attribute: ********** R : Endpoint 0x0003's Cluster 0x00000201's Attribute 0x00000012 is 1200 **********
+LOG: I (4819) MATTER_BRIDGE: app_attribute_update_cb: ep=3, cl=0x201, attr=0x0, cb_type=1, val_type=137
+LOG: I (4820) esp_matter_attribute: ********** R : Endpoint 0x0003's Cluster 0x00000201's Attribute 0x00000012 is 1200 **********
+LOG: I (4831) MATTER_BRIDGE: Matter UI Updated for MAX! 01CFEF: Actual=20.2 C, Target=12.0 C, Mode=1
+
+======================================================================
+ Keine Pairing-Codes im Log gefunden.
+ Gerät evtl. schon gepairt oder Logging deaktiviert.
+======================================================================
+
