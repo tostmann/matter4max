@@ -148,7 +148,7 @@ extern "C" void matter_bridge_init(void)
     
     char ble_name[16];
     snprintf(ble_name, sizeof(ble_name), "MAX-%02X%02X", mac[4], mac[5]);
-    chip::DeviceLayer::Internal::BLEMgr().SetDeviceName(ble_name);
+    chip::DeviceLayer::ConnectivityMgr().SetBLEDeviceName(ble_name);
 
     // Create the Aggregator (Bridge)
     aggregator::config_t bridge_config;
