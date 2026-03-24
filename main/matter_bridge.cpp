@@ -7,7 +7,7 @@
 #include <esp_matter_console.h>
 #include <esp_matter_cluster.h>
 #include <esp_matter_attribute.h>
-#include <platform/internal/BLEManager.h>
+#include <platform/ConnectivityManager.h>
 #include "esp_wifi.h"
 #include "max_nvs.h"
 
