@@ -9,6 +9,16 @@ The **Matter-to-MAX! Bridge** is an ESP-IDF based firmware that bridges legacy e
 - **Duty Cycle Management:** Implements a strict ETSI-compliant 1% Duty Cycle limit using a Token-Bucket algorithm to ensure regulatory compliance and prevent 868MHz band spam.
 - **Hardware Optimized:** Built for the ESP32-C6, utilizing its modern architecture for Wi-Fi connectivity and SPI communication with the CC1101.
 
+## Screenshots (Home Assistant Integration)
+
+Here is how the bridged legacy 868MHz devices natively appear in Home Assistant via Matter – fully local and without any cloud dependency:
+
+<p align="center">
+  <img src="images/Raumklima.png" width="48%" alt="Room Climate (Thermostats)" />
+  &nbsp;
+  <img src="images/Kontakte.png" width="48%" alt="Contact Sensors (Windows/Doors)" />
+</p>
+
 ## Hardware Requirements
 - **Microcontroller:** ESP32-C6 (e.g., cul32-c6).
 - **Radio Module:** TI CC1101 (868MHz MATCHED).
